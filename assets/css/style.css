@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(181, 220, 255);
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "sidebar main"
+    "footer footer";
+}
+
+
+
+nav{
+    background-color: #e91e63;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    grid-area: nav;
+}
+
+
+main{
+    grid-area: main;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.producto{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: cener;
+    text-align: center;
+    box-shadow: 4px 14px 17px 2px rgb(152, 198, 252);
+}
+
+.producto button{
+    padding: 0.9em;
+    background-color: #E91E63;
+    border: 0 solid;
+    color: white;
+    cursor: pointer;
+
+}
+
+.producto h3{
+    margin-bottom: 1em;
+}
+
+.producto p{
+    margin-bottom: 1em;
+}
+
+.producto img{
+width: 350px;
+}
+
+
+.grilla{
+    display: grid;
+    width: 20%;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.5em;
+}
+
+/* aside*/
+aside{
+    grid-area: sidebar;
+    background-color: rgb(179, 206, 231);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    height: 100hv;
+}
+
+
+footer{
+    background-color:#303f9f ;
+    padding: 1em;
+    color: white;
+    text-align: center;
+    grid-area: footer;
+}
+    
